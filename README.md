@@ -8,6 +8,9 @@
 <br><h3>JavaScript framework: React</h3><br>
 <br><h3>Major Packages</h3><br>
 <p>  -- styled-components</p><br>
-<br><h3>Page Load Time of Application: 445ms</h3><br>
+<br><h3>Page Load Time of Application: 310ms</h3><br>
+<p> Measured Page Load Time using Network Tab in Chrome Dev Tools.</p><br>
 <br><h3>Optimizations: </h3><br>
-<p> Lazy loaded the Table Component to improve performance and loading time</p><br>
+<p> Lazy loaded the Table Component to improve performance and loading time by 135ms.</p><br>
+<p> Page Load Time without Lazy Loading and Suspense: 445ms.</p><br>
+<p> Page Load Time with Lazy Loading and Suspense: 310ms.</p><br>
