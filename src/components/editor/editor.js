@@ -4,9 +4,9 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import styled from "styled-components";
 
 import "./editor.css";
-import { useState, useContext } from "react";
+import { useState, useContext, lazy, Suspense  } from "react";
 import { RootContext } from "../../context/root";
-import Table from "./table";
+const Table = lazy(() =>  import("./table"));
 
 export default function Editor(props) {
 
@@ -169,7 +169,9 @@ export default function Editor(props) {
            />
            </div>
       </Row>
+      <Suspense fallback={<h1>Still Loading…</h1>}>
       <Table data={props.data}/>
+      </Suspense>
     </Column>
   );
 }
